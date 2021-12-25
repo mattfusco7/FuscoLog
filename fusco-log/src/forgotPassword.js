@@ -31,7 +31,7 @@ function ForgotPassword(props) {
 
     return (
         <main>
-            <Header />
+            <Header isSignIn={false} />
             {error &&
                 <div className="errorDiv">
                     {error}

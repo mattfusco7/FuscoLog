@@ -31,7 +31,7 @@ function SignIn(props) {
 
     return (
         <main>
-            <Header />
+            <Header isSignIn={true} />
             {error &&
                 <div className="errorDiv">
                     {error}
