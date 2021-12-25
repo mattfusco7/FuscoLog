@@ -1,28 +1,22 @@
-import './App.css';
-import { useState } from 'react';
+import './styles/App.css';
 import Log from './logPage';
+import SignUp from './signUpPage';
 import SignIn from './signInPage';
+import { AuthProvider } from './contexts/AuthContext';
+import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom"
 
 function App() {
-  const [isSignedIn, setIsSignedIn] = useState(false)
-  const [hasAccount, setHasAccount] = useState(true)
-  const [isCoach, setIsCoach] = useState(false)
-
-  return isSignedIn ? (
-    <Log
-      isCoach={isCoach}
-    />
-  ) :
-    (
-      <SignIn
-        isSignedIn={isSignedIn}
-        setIsSignedIn={setIsSignedIn}
-        hasAccount={hasAccount}
-        setHasAccount={setHasAccount}
-        isCoach={isCoach}
-        setIsCoach={setIsCoach}
-      />
-    );
+  return (
+    <Router>
+      <AuthProvider>
+        <Switch>
+          <Route exact path="/" element={<Log />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+        </Switch>
+      </AuthProvider>
+    </Router>
+  );
 }
 
 export default App;

@@ -1,5 +1,6 @@
-import './log.css';
+import './styles/log.css';
 import Calendar from 'react-calendar';
+import Footer from './footer';
 
 function Log(props) {
 
@@ -12,6 +13,7 @@ function Log(props) {
                 cancerous Strava culture that has overtaken Cornell Track and
                 Field.</p>
             <Calendar />
+            <Footer />
         </>
     );
 }
