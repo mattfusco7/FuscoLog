@@ -6,7 +6,7 @@ function NavBar(props) {
 
     return (
         <>
-            <Link to="/">
+            <Link to={props.onProfile ? "/" : "/settings"}>
                 <img src={thumbnail} alt="logo" id="thumbNav" />
             </Link>
             <ul id="navJ">
