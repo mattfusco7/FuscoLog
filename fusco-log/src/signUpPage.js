@@ -1,9 +1,11 @@
 import './signIn.css';
+import Header from './header';
 
 function SignUp(props) {
 
     return (
-        <>
+        <main>
+            <Header />
             <div className="signForm">
                 <div className="formPair">
                     <label>Set Username: </label>
@@ -14,7 +16,7 @@ function SignUp(props) {
                     <input type="password" />
                 </div>
             </div>
-        </>
+        </main>
     );
 }
 

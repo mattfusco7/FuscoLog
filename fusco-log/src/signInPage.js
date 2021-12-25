@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './signIn.css';
 import SignUp from './signUpPage';
-// import logo from './logo.jpg';
+import Header from './header';
 
 function SignIn(props) {
     const [isSignUp, setSignUp] = useState(false)
@@ -30,7 +30,7 @@ function SignIn(props) {
         ) :
         (
             <main>
-                <h1>Welcome to Fusco Log!</h1>
+                <Header />
                 <div className="signForm">
                     <div className="formPair">
                         <label>Username: </label>

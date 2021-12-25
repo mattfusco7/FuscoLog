@@ -1,4 +1,3 @@
-import logo from './logo.jpg';
 import './App.css';
 import { useState } from 'react';
 import Log from './logPage';
