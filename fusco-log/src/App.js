@@ -6,6 +6,7 @@ import PrivateRoute from './privateRoute';
 import { AuthProvider } from './contexts/AuthContext';
 import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 import ForgotPassword from './forgotPassword';
+import Profile from './profile';
 
 function App() {
 
@@ -18,6 +19,10 @@ function App() {
             <Route exact path="/" element={<Log />} />
           </Route>
 
+          <Route exact path="/settings"
+            element={<PrivateRoute />}>
+            <Route exact path="/settings" element={<Profile />} />
+          </Route>
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
