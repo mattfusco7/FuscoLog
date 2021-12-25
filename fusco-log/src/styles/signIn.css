@@ -53,6 +53,10 @@ input {
     margin-top: 25px;
 }
 
+.forgot {
+    margin-top: 10px !important;
+}
+
 .link {
     color:white;
     font-weight: bold;
