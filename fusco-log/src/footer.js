@@ -1,15 +1,15 @@
 import './styles/footer.css';
 
 function Footer(props) {
-    function handleLogOut() {
-
-    }
-
-
     return (
-        <div className="logOut-btn" onClick={handleLogOut}>
-            Log Out
-        </div>
+        <>
+            <div className="logOut-btn" onClick={props.handleLogOut}>
+                Log Out
+            </div>
+            <div className="errorDiv-footer">
+                {props.error}
+            </div>
+        </>
     );
 }
 
