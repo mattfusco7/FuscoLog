@@ -24,7 +24,9 @@ function Log(props) {
     return (
         <>
             <NavBar />
-            <Calendar />
+            <div id="calendarDiv">
+                <Calendar />
+            </div>
             <Footer
                 error={error}
                 setError={setError}
