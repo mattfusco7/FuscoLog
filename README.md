@@ -1,2 +1,4 @@
 # FuscoLog
-Introducing a new running log system for CU distance. Hoping to put an end to the cancerous Strava culture on our team once completed. Estimated completion time is March 2022.
+Making a new running log web app for the team (fuck Strava, respectfully). Hoping to be fully completed by March 2022, with a coaches dashboard and training group features.
+
+To see current progress and run the development server, clone the repo and navigate into the 'fusco-log' folder. Run 'npm install' and then 'npm start' and you should be all set.  
