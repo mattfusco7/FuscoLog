@@ -17,7 +17,7 @@ label {
     font-weight: bolder;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 12em;
+    margin-left: 6em !important;
 }
 
 input {

@@ -8,9 +8,9 @@ function Header(props) {
             <img src={logo} alt="logo" id="logo-img" />
             {props.isSignIn &&
                 <div id="main_desc">
-                    <h2>Our Mission</h2>
-                    To create a training log system built for the
-                    Cornell Distance team and its coaches. (Fuck Strava, respectfully.)
+                    <h2>Welcome!</h2>
+                    Click the sign up link below to make a free account and start logging your training.
+                    Contact <a href="mailto: mjf328@cornell.edu">Matt Fusco</a> with questions.
                 </div>
             }
         </>
