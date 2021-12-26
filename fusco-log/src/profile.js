@@ -21,7 +21,7 @@ function Profile(props) {
 
     return (
         <>
-            <NavBar onProfile={true} />
+            <NavBar />
             <div id="profile-main">
                 <h1>Profile</h1>
                 <h3>Email: {currentUser.email} </h3>

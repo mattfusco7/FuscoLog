@@ -7,6 +7,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 import ForgotPassword from './forgotPassword';
 import Profile from './profile';
+import Home from './home';
 
 function App() {
 
@@ -16,12 +17,15 @@ function App() {
         <Switch>
           <Route exact path="/"
             element={<PrivateRoute />}>
-            <Route exact path="/" element={<Log />} />
+            <Route exact path="/" element={<Home />} />
           </Route>
-
-          <Route exact path="/settings"
+          <Route exact path="/log"
             element={<PrivateRoute />}>
-            <Route exact path="/settings" element={<Profile />} />
+            <Route exact path="/log" element={<Log />} />
+          </Route>
+          <Route exact path="/profile"
+            element={<PrivateRoute />}>
+            <Route exact path="/profile" element={<Profile />} />
           </Route>
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />

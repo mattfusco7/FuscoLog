@@ -3,6 +3,7 @@
     margin-top: 10px;
     left: 20px;
     position: absolute;
+    cursor: pointer;
 }
 
 #navJ {
@@ -55,4 +56,10 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
+}
+
+.sticky {
+  position: sticky;
+  width: 100%;
+  top: 0;
 }

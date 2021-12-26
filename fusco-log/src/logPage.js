@@ -5,7 +5,7 @@ import NavBar from './navBar';
 function Log(props) {
     return (
         <>
-            <NavBar onProfile={false} />
+            <NavBar />
             <div id="calendarDiv">
                 <Calendar />
             </div>
