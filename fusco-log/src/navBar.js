@@ -20,6 +20,7 @@ function NavBar(props) {
             <ul id="navJ">
                 <Link to="/">Home</Link>
                 <Link to="/log">My Log</Link>
+                <Link to="/greg">Routes</Link>
                 <div className="dot"></div>
             </ul>
         </div>

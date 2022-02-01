@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-d
 import ForgotPassword from './forgotPassword';
 import Profile from './profile';
 import Home from './home';
+import Greg from './greg';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/greg" element={<Greg />} />
         </Switch>
       </AuthProvider>
     </Router>

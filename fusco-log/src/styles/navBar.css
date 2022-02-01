@@ -21,7 +21,7 @@
     text-transform: uppercase;
     font-weight: 500;
     display: inline-block;
-    width: 80px;
+    padding-left: 20px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
@@ -43,16 +43,24 @@
 }
 
 #navJ a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(25px);
-  transform: translateX(25px);
+  -webkit-transform: translateX(45px);
+  transform: translateX(45px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 #navJ a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(115px);
-  transform: translateX(115px);
+  -webkit-transform: translateX(135px);
+  transform: translateX(135px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#navJ a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(215px);
+  transform: translateX(215px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
